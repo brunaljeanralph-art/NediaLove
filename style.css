@@ -331,3 +331,116 @@
     @media (prefers-reduced-motion: reduce) {
       *, *::before, *::after { scroll-behavior: auto !important; animation-duration: .01ms !important; animation-iteration-count: 1 !important; transition-duration: .01ms !important; }
     }
+/* =================================
+   ELEGANT LETTER TYPOGRAPHY
+================================= */
+
+.letter-content {
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.letter-body {
+  width: 100%;
+  max-width: 760px;
+  margin: 0 auto;
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 20px;
+  line-height: 1.85;
+  letter-spacing: 0.15px;
+  text-align: justify;
+  overflow-wrap: break-word;
+}
+
+/* Espas ant paragraf yo */
+.letter-body p {
+  margin: 0 0 25px;
+  text-align: justify;
+  text-indent: 22px;
+}
+
+/* Premye paragraf */
+.letter-body .opening {
+  text-indent: 0;
+  margin-bottom: 30px;
+  font-weight: 500;
+}
+
+/* Tit lèt la */
+.letter-title {
+  line-height: 1.5;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+/* Deklarasyon lanmou */
+.letter-body .love-declaration {
+  text-align: center;
+  text-indent: 0;
+  font-family: 'Playfair Display', serif;
+  font-size: 25px;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  margin: 35px 0;
+}
+
+/* Ti mesaj an kreyòl */
+.letter-body .creole-note {
+text-align: center;
+text-indent: 0;
+line-height: 1.9;
+margin: 30px auto 26px !important;
+}
+.creole-note strong {
+  display: block;
+  text-align: center;
+  font-size: 21px;
+  margin-top: 12px;
+}
+
+/* Siyati */
+.letter-body .signature-intro {
+  text-align: center;
+  text-indent: 0;
+  margin-top: 45px;
+  margin-bottom: 20px;
+}
+
+.signature {
+  text-align: center;
+  margin-top: 25px;
+}
+
+.signature-script,
+.signature-name {
+  display: block;
+  text-align: center;
+}
+
+/* Ti dekorasyon anba lèt la */
+.bottom-flourish {
+  text-align: center;
+  margin-top: 35px;
+}
+
+/* Adaptasyon pou telefòn */
+@media screen and (max-width: 600px) {
+  .letter-body {
+    font-size: 18px;
+    line-height: 1.8;
+    letter-spacing: 0.1px;
+  }
+
+  .letter-body p {
+    margin-bottom: 22px;
+    text-indent: 17px;
+  }
+
+  .letter-body .love-declaration {
+    font-size: 22px;
+  }
+
+  .creole-note strong {
+    font-size: 19px;
+  }
+}
